@@ -1,0 +1,540 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/*.clear {
+    clear: both;
+}*/
+
+html { 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#main {
+      
+}
+
+
+#header { 
+    background:#000;
+    height: 46.5px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;/*nang len 1 layer*/
+    overflow: hidden;/*an the con bi so ra */
+    
+   
+}
+#header .mobile-menu-btn,
+#header .search-btn  {
+    float: right;
+    color: #fff;
+    padding: 0 6px;
+    }
+
+    
+
+
+#header .search-btn:hover {
+    background: #f44336; 
+    cursor: pointer; /* bien tro chuot thanh ban tay*/ 
+}
+#header .mobile-menu-btn:hover {
+    background: #ccc;
+    
+}
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .menu-icon,
+#header .search-icon {
+    line-height: 46.5px;/* chieu cao cua 1 dong*/
+    color:#fff;
+    padding: 0 21px;
+    font-size: 20px;
+   
+}
+#header .menu-icon {
+    display: none;
+}
+#nav { 
+    display: inline-block;
+}
+
+#nav, .subnav  {
+    list-style-type: none; 
+}
+
+#nav > li {
+    display: inline-block;
+   
+}
+
+
+#nav li  {
+    position: relative;
+    
+
+     
+}
+#nav > li > a {
+    color: #fff; 
+    text-transform: uppercase; 
+}
+
+
+#nav li a {
+   
+   text-decoration: none;/* bo gach chan cua chu*/
+  line-height: 46.5px;
+  padding: 0 24px;
+  display: block;
+}
+
+#nav > li:hover > a {
+    color:#000;
+    background: #ccc;
+    
+
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav .subnav {
+     display: none;
+}
+
+
+#nav .subnav {
+   position: absolute;
+   top: 100%;
+   background: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 8px 12px;
+    display: block;
+    line-height: 20px;
+
+}
+
+
+
+#nav .subnav li:hover a  {
+    color: #000;
+    background: #ccc;
+
+}
+#slider {
+    position: relative;
+    padding-top: 50%;
+    margin-top: 46.5px;
+    background: url('../img/slider1.jpg') top center /cover no-repeat ;
+  
+
+
+
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 48px;
+    text-align: center;
+    color: #ccc;
+    width: 100%;
+    
+    
+    
+}
+#slider .text-heading {
+     font-weight: 500;/* độ dày của chữ*/
+     font-size: 24px;
+}
+#slider .text-decreption {
+      font-size: 15px;
+      margin-top: 25px;
+
+}
+
+
+#content {
+    
+   
+     
+}
+
+
+
+#content .content-section {
+    width: 800px;
+    max-width: 100%;/* luôn tràn màn hình so với chiều rộng đã cài */
+    padding: 64px 0;
+    font-weight: 400;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+#content .section-heading {
+    text-align: center;
+    letter-spacing: 4px;/* khoảng cách các kí tự trong 1 từ*/
+    margin: 10px 0;
+    font-weight: 100;
+    font-size: 30px;
+
+
+}
+#content .section-sub-heading {
+     opacity: 0.6;
+     text-align: center;
+     margin: 15px 0;
+     font-size: 15px;
+}
+#content .about-text {
+    margin: 15px 0;
+    
+}
+.clear {
+    clear:both;
+}
+#content .members-list {
+    text-align: center;
+    padding: 32px 0;
+}
+
+#content .member-item {
+    float: left;
+    width: 33.333%;
+   
+}
+#content .member-name {
+    font-size: 16px;
+    margin: 15px 0;
+}
+#content .member-img {
+    width: 153.5px;
+    border-radius: 4px;
+}
+
+.tour-section {
+    background: #000;
+    color: #fff;
+}
+
+.tick {
+
+    background: #fff;
+    list-style: none;
+    padding: 8px 16px;
+}
+.tick li {
+    color: #757575;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+
+    
+}
+.tick .out {
+    color: #fff;
+    background:#f44336;
+     padding: 4px 10px; 
+     margin-left: 16px;
+}
+
+.tick .sold {
+    float: right;
+    background: #000;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+    border-radius: 50%;
+    
+}
+
+.places-list {
+    margin: 32px -8px 48px;
+}
+.place-item {
+    float: left;
+    width: 33.333%;
+    padding: 0 8px;
+}
+.place-img {
+    width: 100%;
+    display: block;
+}
+.place-img:hover {
+    opacity: 0.6;
+}
+.place-body {
+    background-color: #fff;
+    color: #000;
+    padding: 16px;
+    font-size: 15px;
+
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+.place-time {
+    margin-top: 15px;
+    color:#757575;
+}
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+.place-buy-btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.place-buy-btn:hover {
+    background: #ddd;
+    color: #000;
+}
+
+.map-section {
+
+}
+.map-section img {
+    width: 100%;
+    
+}
+
+
+
+
+#footer, 
+#footer a {          
+      color:rgba(0, 0, 0, 0.6);
+      letter-spacing: 5px; /* khoang cach cac ki tu*/
+}
+#footer .footer-icon {
+    font-size: 24px;
+    padding: 64px 0 10px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+#footer a:hover,
+.footer-icon div:hover {
+    color:rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+
+#footer .footer-conten {
+    display:  flex;
+    justify-content: center;
+    font-size: 15px;
+    padding-bottom: 16px;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;/* giua hang ngang*/
+    align-items: center;/* giua chieu cao*/
+    display: none;
+}  
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    background: #fff;
+    width: 900px;
+    max-width: calc(100% - 16px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-header {
+    background: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+
+}
+.modal-heading-icon {
+   
+}
+
+.modal-close:hover {
+    opacity: 1;
+    background-color:#f44336;
+}
+
+.modal-close {
+    position: absolute;/*gan theo the cha*/
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;/*bien tro chuot*/
+    opacity: 0.8;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    padding: 16px 0px 6px;
+    }
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+}
+#buy {
+    display: block; 
+    width: 100%;
+    color: #fff;
+    background-color: #009688;
+    margin: 16px 0;
+    padding: 16px 0;
+    border: none;
+    font-size: 20px;
+}
+
+
+#buy:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor:pointer;
+}
+
+.modat-footer {
+    padding: 16px;
+    display: block;
+
+}
+
+.modal-help {
+    
+    text-align: right;
+    margin: 15px 18px;
+}
+
+.a {
+    color: #2196F3;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px); 
+    }
+    to {
+        opacity: 1;
+         transform: translateY(0)
+    }
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+} 
+.contact-form {
+    font-size: 15px;
+}
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half {
+    width: 50%;
+}
+.col-full {
+    width: 100%;
+}
+.mt-8 {
+    margin-top: 8px !important;
+
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.contact-form .form-submit-btn {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+
+}
+
+
+input.form-submit-btn:hover {
+    background: #ccc;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+
