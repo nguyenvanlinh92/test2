@@ -1,0 +1,36 @@
+diff a/assets/css/responsive.css b/assets/css/responsive.css	(rejected hunks)
+@@ -0,0 +1,34 @@
++/*pc*/
++@media (min-width: 1024px) {
++    #slider {
++        position: relative;
++        padding-top: 50%;
++        margin-top: 46.5px;
++        background: url('../img/slider1.jpg') top center /cover no-repeat ;
++      
++    
++    
++    
++    }
++}
++
++
++/* Tablet */
++@media (min-width: 740px) and (max-width: 1023px) {
++
++}
++
++/* Mobile */
++@media (max-width: 740px) {
++    #nav > li {
++        display: block;
++        }
++        #header .search-btn {
++            display: none;
++        }
++    #content .member-item {
++            float: none;
++            width: 100%;
++        }
++
++}
